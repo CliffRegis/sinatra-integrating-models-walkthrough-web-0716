@@ -5,5 +5,6 @@
 <h2>Vowels:</h2>
 
 <h2>Consonants:</h2>
-
-<h2>Most Common Letter:___ used ___ times</h2>
+<% @biggest.each do  |x,y| %>
+<h2> <%= "Most Common Letter: #{x} used #{y} times" %>  </h2>
+<% end %>
